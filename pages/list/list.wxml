@@ -1,0 +1,51 @@
+<!--pages/list/list.wxml-->
+<!-- 类似div -->
+<view class="container1">
+  <view>A</view>
+  <view>B</view>
+  <view>C</view>
+</view>
+
+<!-- 滑动组件 -->
+<scroll-view class="container2" scroll-y>
+  <view>A</view>
+  <view>B</view>
+  <view>C</view>
+</scroll-view>
+
+<!-- 轮播图区域 -->
+<swiper class="swiper-container" indicator-dots indicator-color="white" indicator-active-color="gray" autoplay interval="3000" circular>
+  <swiper-item>
+    <view class="item">A</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item">B</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item">C</view>
+  </swiper-item>
+</swiper>
+
+<!-- text实现长按选中文本内容 -->
+<view class="container3">
+  手机号:
+  <text selectable>1380000028</text>
+</view>
+
+<rich-text nodes="<h1 style='color: red'>标题</h1>" class="container4"></rich-text>
+
+<!-- type指定按钮,size小尺寸按钮，plain镂空按钮 -->
+<view class="button-container">
+  <button>默认按钮</button>
+  <button type="primary">主色调按钮</button>
+  <button type="warn">警告按钮</button>
+  <button size="mini">默认按钮</button>
+  <button size="mini" type="primary">默认按钮</button>
+  <button size="mini" type="warn">默认按钮</button>
+  <button>默认按钮</button>
+  <button type="primary" plain>主色调按钮</button>
+  <button type="warn" plain>警告按钮</button>
+</view>
+
+<!-- 图片组件 -->
+<image src="/images/秦汉1.png" class="image-container" mode="aspectFit"></image>

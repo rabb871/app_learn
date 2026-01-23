@@ -1,0 +1,94 @@
+.container1{
+  display: flex;
+  justify-content: space-around;
+}
+
+.container1 view{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.container1 view:nth-child(1){
+  background-color: antiquewhite;
+}
+
+.container1 view:nth-child(2){
+  background-color: lightgray;
+}
+
+.container1 view:nth-child(3){
+  background-color: lightskyblue;
+}
+
+.container2{
+  position: relative;
+  top: 40px;
+  left: 20px;
+  border: 1px solid brown;
+  height: 150px;
+  width: 100px;
+}
+
+.container2 view{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.container2 view:nth-child(1){
+  background-color: antiquewhite;
+}
+
+.container2 view:nth-child(2){
+  background-color: lightgray;
+}
+
+.container2 view:nth-child(3){
+  background-color: lightskyblue;
+}
+
+.swiper-container{
+  position: relative;
+  top: 80px;
+  height: 150px;
+}
+
+.item{
+  height: 100%;
+  line-height: 150px;
+  text-align: center;
+}
+
+swiper-item:nth-child(1) .item{
+  background-color: antiquewhite;
+}
+swiper-item:nth-child(2) .item{
+  background-color: lightpink;
+}
+swiper-item:nth-child(3) .item{
+  background-color: lightcyan;
+}
+
+.container3{
+  position: relative;
+  top: 100px;
+}
+
+.container4{
+  position: relative;
+  top: 120px;
+}
+
+.button-container{
+  position: relative;
+  top: 150px;
+}
+
+.image-container{
+  position: relative;
+  top: 200px;
+}
+
