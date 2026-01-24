@@ -1,16 +1,42 @@
 {
   "pages": [
+    "pages/Personal_display/Personal_display",
+    "pages/day_02/day_02",
     "pages/list/list",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "学习学习再学习",
     "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/Personal_display/Personal_display",
+      "text": "首页",
+      "iconPath": "/images/MenuIcon-首页-黑色.png",
+      "selectedIconPath": "/images/MenuIcon-首页-黑色_active.png"
+    },
+    {
+      "pagePath": "pages/list/list",
+      "text": "个性",
+      "iconPath": "/images/MenuIcon-个性化-黑色.png",
+      "selectedIconPath": "/images/MenuIcon-个性化-黑色_active.png"
+    },
+    {
+      "pagePath": "pages/day_02/day_02",
+      "text": "提示",
+      "iconPath": "/images/MenuIcon-保养提醒-黑色.png",
+      "selectedIconPath": "/images/MenuIcon-保养提醒-黑色_active.png"
+    }
+  ]
+    
   },
   "style": "v2",
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents"
 }
+
+

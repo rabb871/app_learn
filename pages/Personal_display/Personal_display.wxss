@@ -1,0 +1,48 @@
+/* pages/Personal_display/Personal_display.wxss */
+.content {
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.avatar-banner {
+  background-color: white;
+  padding: 40rpx 0;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-swiper {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4rpx solid #fff;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.info-list {
+  padding: 20rpx 40rpx;
+}
+
+.info-item {
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid rgb(151, 150, 150);
+  display: flex;
+}
+
+.info-label {
+  font-size: 32rpx;
+  color: #333;
+  width: 120rpx;
+}
+
+.info-value {
+  font-size: 32rpx;
+  color: #666;
+  flex: 1;
+}
