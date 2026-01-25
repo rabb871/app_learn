@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/register/register",
     "pages/Personal_display/Personal_display",
     "pages/day_02/day_02",
     "pages/list/list",
