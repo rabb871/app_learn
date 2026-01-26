@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/home/home",
+    "pages/shoplist/shoplist",
     "pages/register/register",
     "pages/Personal_display/Personal_display",
     "pages/day_02/day_02",
@@ -14,7 +16,7 @@
   },
   "tabBar": {
     "list": [{
-      "pagePath": "pages/Personal_display/Personal_display",
+      "pagePath": "pages/home/home",
       "text": "首页",
       "iconPath": "/images/MenuIcon-首页-黑色.png",
       "selectedIconPath": "/images/MenuIcon-首页-黑色_active.png"
