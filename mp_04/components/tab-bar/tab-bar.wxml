@@ -1,0 +1,12 @@
+<!--components/tab-bar/tab-bar.wxml-->
+<view class="tab-bar">
+  <view 
+    class="tab-item {{active === item.key ? 'active' : ''}}"
+    wx:for="{{tabs}}" 
+    wx:key="key"
+    bindtap="onTabClick"
+    data-key="{{item.key}}"
+  >
+    <text>{{item.text}}</text>
+  </view>
+</view>

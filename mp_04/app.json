@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/message/message",
+    "pages/contact/contact",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#f3e4b2"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "/images/MenuIcon-首页-黑色.png",
+      "selectedIconPath": "/images/MenuIcon-首页-黑色_active.png"
+    },
+    {
+      "pagePath": "pages/message/message",
+      "text": "消息",
+      "iconPath": "/images/MenuIcon-个性化-黑色.png",
+      "selectedIconPath": "/images/MenuIcon-个性化-黑色_active.png"
+    },
+    {
+      "pagePath": "pages/contact/contact",
+      "text": "联系我们",
+      "iconPath": "/images/MenuIcon-保养提醒-黑色.png",
+      "selectedIconPath": "/images/MenuIcon-保养提醒-黑色_active.png"
+    }
+  ]
+  },
+
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "my-test1": "/components/test/test",
+    "nav-bar": "/components/nav-bar/nav-bar",
+    "tab-bar": "/components/tab-bar/tab-bar",
+    "popup": "/components/popup/popup",
+    "rate": "/components/rate/rate"
+  }
+}

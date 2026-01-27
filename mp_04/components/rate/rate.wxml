@@ -1,0 +1,12 @@
+<!--components/rate/rate.wxml-->
+<view class="rate">
+  <view 
+    class="star {{index < value ? 'active' : ''}}"
+    wx:for="{{max}}" 
+    wx:key="index"
+    data-index="{{index}}"
+    bindtap="onStarTap"
+  >
+    ★
+  </view>
+</view>

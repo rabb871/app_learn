@@ -1,0 +1,14 @@
+/* components/rate/rate.wxss */
+.rate {
+  display: flex;
+  position: relative;
+  top: 80rpx;
+}
+.star {
+  font-size: 40rpx;
+  margin-right: 10rpx;
+  color: #ccc;
+}
+.star.active {
+  color: #ffd700;
+}

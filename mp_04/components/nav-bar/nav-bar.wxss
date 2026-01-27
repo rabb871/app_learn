@@ -1,0 +1,17 @@
+/* components/nav-bar/nav-bar.wxss */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  height: 88rpx;
+  padding: 0 20rpx;
+  border-bottom: 1px solid #eee;
+}
+.back {
+  font-size: 32rpx;
+  margin-right: 20rpx;
+  cursor: pointer;
+}
+.title {
+  font-size: 32rpx;
+  font-weight: bold;
+}
