@@ -15,31 +15,35 @@
     "navigationBarBackgroundColor": "#ffffff"
   },
   "tabBar": {
+    "custom": true,
     "list": [{
       "pagePath": "pages/home/home",
       "text": "首页",
-      "iconPath": "/images/MenuIcon-首页-黑色.png",
-      "selectedIconPath": "/images/MenuIcon-首页-黑色_active.png"
+      "iconPath": "/images/tab_icons/home.png",
+      "selectedIconPath": "/images/tab_icons/home_active.png"
     },
     {
       "pagePath": "pages/list/list",
-      "text": "个性",
-      "iconPath": "/images/MenuIcon-个性化-黑色.png",
-      "selectedIconPath": "/images/MenuIcon-个性化-黑色_active.png"
+      "text": "信息",
+      "iconPath": "/images/tab_icons/cate.png",
+      "selectedIconPath": "/images/tab_icons/cate_active.png"
     },
     {
       "pagePath": "pages/day_02/day_02",
       "text": "提示",
-      "iconPath": "/images/MenuIcon-保养提醒-黑色.png",
-      "selectedIconPath": "/images/MenuIcon-保养提醒-黑色_active.png"
+      "iconPath": "/images/tab_icons/my.png",
+      "selectedIconPath": "/images/tab_icons/my_active.png"
     }
   ]
     
   },
-  "style": "v2",
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
+  }
 }
 
 
