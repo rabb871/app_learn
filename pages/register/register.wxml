@@ -1,0 +1,76 @@
+<!--pages/register/register.wxml-->
+<view class="register-title">注册</view>
+<view class="fenjie"></view>
+<view class="register-declare">
+  <view class="line1">欢迎来到青铜器博物阁</view>
+  <view class="line2">触摸千年斑驳的铜锈，解锁时光文明的密码。</view>
+</view>
+<view class="content">
+  <view class="form-item">
+    <image src="/pages/register/images/电话.png" mode="widthFix" class="phone-icon"></image>
+    <input placeholder="手机号" value="{{formData.phone}}" bindinput="handleInput" data-key="phone" class="phone-num" />
+    <button class="code-btn" bindtap="getCode" disabled="{{codeDisabled}}" >{{codeText}}</button>
+  </view>
+  <view class="form-item">
+    <image src="/pages/register/images/密码 (1).png" mode="widthFix" class="mima-icon"></image>
+    <input placeholder="密码" password value="{{formData.password}}" bindinput="handleInput" data-key="password" class="mima"/>
+  </view>
+  <view class="form-item">
+    <image src="/pages/register/images/确认密码.png" mode="widthFix" class="mima-icon"></image>
+    <input placeholder="确认密码" password value="{{formData.confirmPwd}}" bindinput="handleInput" data-key="confirmPwd" class="mima"/>
+  </view>
+  <view class="form-item">
+    <image src="/pages/register/images/性别.png" mode="widthFix" class="mima-icon" class="sex-icon"></image>
+    <text class="label">性别</text>
+    <radio-group bindchange="handleRadioChange">
+      <label class="radio-item">
+        <radio value="male" checked="{{formData.gender === 'male'}}" /> 男
+      </label>
+      <label class="radio-item">
+        <radio value="female" checked="{{formData.gender === 'female'}}" /> 女
+      </label>
+    </radio-group>
+  </view>
+  <view class="form-item">
+    <image src="/pages/register/images/出生日期.png" mode="widthFix" class="mima-icon" class="day-icon"></image>   
+    <picker mode="date" value="{{formData.birthday}}" bindchange="handleDateChange">
+      <view class="picker-text">{{formData.birthday || '请选择出生日期'}}</view>
+    </picker>
+  </view>
+  <view class="form-item">
+    <image src="/pages/register/images/兴趣爱好.png" mode="widthFix" class="mima-icon" class="love-icon"></image>       
+    <text class="label">兴趣爱好：</text>
+    <checkbox-group>
+      <label class="checkbox-item">
+        <checkbox value="photo" checked="{{formData.hobbies.includes('photo')}}" /> 摄影
+      </label>
+      <label class="checkbox-item">
+        <checkbox value="code" checked="{{formData.hobbies.includes('code')}}" /> 编程
+      </label>
+      <label class="checkbox-item">
+        <checkbox value="travel" checked="{{formData.hobbies.includes('travel')}}" /> 旅行
+      </label>
+    </checkbox-group>
+  </view>
+  <view class="form-item upload-area" bindtap="chooseImage">
+    <image src="{{formData.avatar || '/pages/register/images/头像上传.png'}}" mode="aspectFill" />
+    <text>点击上传图片</text>
+  </view>
+  <view class="form-item agree-item">
+    <checkbox-group bindchange="handleAgreeChange">
+      <label class="agree-label">
+        <checkbox value="agree" checked="{{formData.agree}}" />
+        <view class="wenzi">
+          <view>我已阅读并同意</view>
+          <view class="zhuyi">《用户协议》</view>
+          <view>和</view>
+          <view class="zhuyi">《隐私政策》</view>
+        </view>
+      </label>
+    </checkbox-group>
+  </view>
+  <button class="submit-btn" bindtap="submitForm">提交注册</button>
+</view>
+
+
+

@@ -1,0 +1,33 @@
+<!--pages/Personal_display/Personal_display.wxml-->
+<view class="content">
+  <view class="avatar-banner">
+      <swiper class="avatar-swiper" autoplay="true" interval="2000" circular="true">
+        <swiper-item wx:for="{{avatarList}}" wx:key="*this">
+          <image class="avatar-img" src="{{item}}" mode="widthFix"></image>
+        </swiper-item>
+      </swiper>
+  </view>
+
+  <view class="info-list">
+    <view class="info-item">
+      <text class="info-label">姓名：</text>
+      <text class="info-value">{{userInfo.name}}</text>
+    </view>
+    <view class="info-item">
+      <text class="info-label">年龄：</text>
+      <text class="info-value">{{userInfo.age}}</text>
+    </view>
+    <view class="info-item">
+      <text class="info-label">性别：</text>
+      <text class="info-value">{{userInfo.gender}}</text>
+    </view>
+    <view class="info-item">
+      <text class="info-label">特长：</text>
+      <text class="info-value">{{userInfo.skills}}</text>
+    </view>
+    <view class="info-item">
+      <text class="info-label">爱好：</text>
+      <text class="info-value">{{userInfo.hobby}}</text>
+    </view>
+  </view>
+</view>

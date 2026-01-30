@@ -1,0 +1,6 @@
+<!--components/popup/popup.wxml-->
+<view class="popup-mask" wx:if="{{visible}}" bindtap="onClose"></view>
+<view class="popup-content" wx:if="{{visible}}">
+  <slot></slot>
+  <button bindtap="onClose" class="close-btn">close</button>
+</view>

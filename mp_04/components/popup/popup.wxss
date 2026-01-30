@@ -1,0 +1,28 @@
+/* components/popup/popup.wxss */
+.popup-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+.popup-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f3e4b2;
+  padding: 30rpx;
+  border-radius: 10rpx;
+  z-index: 1000;
+  color: #928f72;
+}
+
+.close-btn{
+  background: #d4af37;
+  color: #434d43;
+}
+
+

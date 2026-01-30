@@ -1,0 +1,9 @@
+<!--pages/contact/contact.wxml-->
+<tab-bar active="contact" bind:tabChange="onTabChange"></tab-bar>
+
+<button bindtap="openPopup" class="open-btn">open pop-up</button>
+<popup visible="{{showPopup}}" bind:close="onPopupClose">
+  <view class="pop-content">pop-up content</view>
+</popup>
+
+<rate value="{{5}}" bind:change="onRateChange"></rate>

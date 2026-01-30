@@ -1,0 +1,195 @@
+/* pages/register/register.wxss */
+.register-title{
+  position: relative;
+  top: 0;
+  margin: auto;
+  font-weight: 600;
+  letter-spacing: 8rpx;
+  font-size: 70rpx;
+  color: #434d43;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10rpx;
+  background-color: #f3e4b2;
+}
+
+/* .fenjie{
+  height: 5rpx;
+  width: 80%;
+  background-color: #f3e4b2;
+  border-bottom: 5rpx solid #d4b038;
+} */
+
+.register-declare{
+  background-color: #f3e4b2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 29rpx;
+  line-height: 40rpx;
+  letter-spacing: 1rpx;
+  color: #434d43;
+  text-decoration: underline;
+}
+
+.content{
+  position: relative;
+  height: 100%;
+  padding: 73rpx 30rpx;
+  background-color: #f3e4b2;
+}
+
+.form-item{
+  display: flex;
+  height: 70rpx;
+  border: 5rpx solid #d4b038;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.phone-icon{
+  position: relative;
+  width: 40rpx;
+  margin: 18rpx;
+}
+
+.phone-num{
+  position: relative;
+  font-size: 35rpx;
+  font-weight: 500;
+  margin: 10rpx 0rpx;
+  background-color: transparent;
+}
+
+.code-btn{
+  background-color: transparent;
+  font-size: 25rpx;
+  border: none;
+  position: relative;
+  color: #71a1b9;
+  right: -30rpx;
+  letter-spacing: 2rpx;
+}
+
+.code-btn:active{
+  background: none;
+  color: #999999;
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.mima-icon{
+  position: relative;
+  width: 40rpx;
+  margin: 18rpx;
+}
+
+.mima{
+  position: relative;
+  font-size: 35rpx;
+  font-weight: 500;
+  margin: 10rpx 0rpx;
+  background-color: transparent;
+  width: 80%;
+}
+
+.sex-icon{
+  position: relative;
+  width: 40rpx;
+  margin: 18rpx;
+}
+
+.label{
+  position: relative;
+  font-size: 35rpx;
+  font-weight: 500;
+  margin: 10rpx 20rpx 10rpx 0rpx;
+  color: #797a79;
+}
+
+.radio-item{
+  position: relative;
+  top: 8rpx;
+  font-size: 35rpx;
+  font-weight: 500;
+  margin: 10rpx 20rpx 10rpx 0rpx;
+  color: #797a79;
+}
+
+.day-icon{
+  position: relative;
+  width: 40rpx;
+  margin: 18rpx;
+}
+
+.picker-text{
+  position: relative;
+  font-size: 35rpx;
+  font-weight: 500;
+  margin: 10rpx 20rpx 10rpx 0rpx;
+  color: #797a79;
+}
+
+.love-icon{
+  position: relative;
+  width: 40rpx;
+  margin: 18rpx;
+}
+
+.checkbox-item{
+  position: relative;
+  top: 8rpx;
+  font-size: 26rpx;
+  font-weight: 500;
+  margin: 10rpx 20rpx 10rpx 0rpx;
+  color: #797a79;
+}
+
+.upload-area {
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: column; */
+  height: 250rpx;
+  padding-bottom: 30rpx;
+  border: 5rpx dashed #d4b038;
+  border-radius: 20rpx;
+  text-align: center;
+  color: #797a79;
+  font-size: 35rpx;
+  font-weight: 500;
+}
+
+.upload-area image{
+  width: 150rpx;
+  height: 150rpx;
+  margin: auto;
+}
+
+.agree-item{
+  border: none;
+  color: #797a79;
+}
+
+.agree-label{
+  display: flex;
+}
+
+.wenzi{
+  position: relative;
+  top: 2rpx;
+  display: flex;
+  color: #797a79;
+  font-size: 32rpx;
+}
+
+.zhuyi{
+  color: #e38e72;
+}
+
+.submit-btn{
+  background-color: #d4af37;
+  color: #434d43;
+}
+
+

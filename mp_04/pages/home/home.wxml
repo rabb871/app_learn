@@ -1,0 +1,15 @@
+<!--pages/home/home.wxml-->
+<!-- <text>pages/home/home.wxml</text> -->
+<!-- <view></view> -->
+<!-- <my-test1 max="9"></my-test1> -->
+<!-- <nav-bar title="我的页面" bind:back="onNavBack"></nav-bar> -->
+
+<tab-bar active="home" bind:tabChange="onTabChange"></tab-bar>
+
+<button bindtap="openPopup" class="open-btn">open pop-up</button>
+<popup visible="{{showPopup}}" bind:close="onPopupClose">
+  <view class="pop-content">pop-up content</view>
+</popup>
+
+<rate value="{{3}}" bind:change="onRateChange"></rate>
+

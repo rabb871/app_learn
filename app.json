@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/shoplist/shoplist",
+    "pages/register/register",
+    "pages/Personal_display/Personal_display",
+    "pages/day_02/day_02",
+    "pages/list/list",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "学习学习再学习",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "/images/tab_icons/home.png",
+      "selectedIconPath": "/images/tab_icons/home_active.png"
+    },
+    {
+      "pagePath": "pages/list/list",
+      "text": "信息",
+      "iconPath": "/images/tab_icons/cate.png",
+      "selectedIconPath": "/images/tab_icons/cate_active.png"
+    },
+    {
+      "pagePath": "pages/day_02/day_02",
+      "text": "提示",
+      "iconPath": "/images/tab_icons/my.png",
+      "selectedIconPath": "/images/tab_icons/my_active.png"
+    }
+  ]
+    
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
+  }
+}
+
+

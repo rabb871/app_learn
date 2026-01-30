@@ -1,0 +1,7 @@
+<!--components/nav-bar/nav-bar.wxml-->
+<view class="nav-bar">
+  <view class="back" wx:if="{{showBack}}" bindtap="onBack">←</view>
+  <view class="title">{{title}}</view>
+</view>
+
+

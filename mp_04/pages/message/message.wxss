@@ -1,0 +1,14 @@
+/* pages/message/message.wxss */
+.pop-content{
+  position: relative;
+  padding: 10rpx 0rpx;
+  text-align: center;
+  bottom: 20rpx;
+}
+
+.open-btn{
+  position: relative;
+  top: 40rpx;
+  background-color: #d4af37;
+  color: #434d43;
+}
