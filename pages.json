@@ -36,6 +36,14 @@
 				{
 					"path": "goods_list/goods_list",
 					"style": {
+						"onReachBottomDistance": 150,
+						"enablePullDownRefresh": true,
+						"backgroundColor": "#F8F8F8"
+					}
+				},
+				{
+					"path": "search/search",
+					"style": {
 						"navigationBarTitleText": ""
 					}
 				}
@@ -43,9 +51,9 @@
 		}
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#c00000",
 		"backgroundColor": "#F8F8F8",
 		"app-plus": {
 			"background": "#efeff4"
