@@ -1,10 +1,13 @@
 <template>
-	<view>
+	<view class="cart-container" v-if="cart.length !== 0">
+		<view>
+		    <my-address></my-address>
+		</view>
 		<view class="cart-title">
 		  <uni-icons type="shop" size="18"></uni-icons>
 		  <text class="cart-title-text">购物车</text>
 		</view>
-		
+	
 		<!-- 商品列表区域 -->
 		<uni-swipe-action>
 		  <block v-for="(goods, i) in cart" :key="i">
@@ -13,7 +16,16 @@
 		    </uni-swipe-action-item>
 		  </block>
 		</uni-swipe-action>
+		
+		<view class="cart-container">
+		    <my-settle></my-settle>
+		</view>
 
+	</view>
+	
+	<!-- 空白购物车区域 -->
+	<view class="empty-cart" v-else>
+		<text class="tip-text">空空如也~</text>
 	</view>
 </template>
 
@@ -76,6 +88,23 @@ export default {
   display: flex;
   padding: 10px 5px;
   border-bottom: 1px solid #f0f0f0;
+}
+
+.cart-container {
+  padding-bottom: 50px;
+}
+
+.empty-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 300px;
+
+  .tip-text {
+	font-size: 20px;
+	color: gray;
+	margin: auto;
+  }
 }
 
 </style>

@@ -1,19 +1,32 @@
 import { mapGetters } from 'vuex'
 
-// 导出一个 mixin 对象
 export default {
   computed: {
     ...mapGetters('m_cart', ['total']),
+  },
+  watch: {
+    total() {
+    this.setBadge()
+    },
   },
   onShow() {
     this.setBadge()
   },
   methods: {
     setBadge() {
-      uni.setTabBarBadge({
-        index: 2,
-        text: this.total + '', 
-      })
-    },
-  },
+      if (this.total === 0) {
+        // 当数量为0时，移除徽标
+        uni.removeTabBarBadge({
+          index: 1
+        })
+      } else {
+        // 当数量大于0时，显示徽标
+        uni.setTabBarBadge({
+          index: 1,
+          text: this.total + ''
+        })
+      }
+    }
+  }
+
 }
